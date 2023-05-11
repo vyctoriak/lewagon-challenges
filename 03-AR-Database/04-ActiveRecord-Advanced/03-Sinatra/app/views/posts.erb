@@ -1,0 +1,22 @@
+<h1>Hacker News</h1>
+
+<h2> Posts </h2>
+
+<% @posts.each do |post| %>
+    Title: <a href="<%= post.url %>">
+        <%= post.title %></a> 📕 - Votes: <%= post.votes %> ⬆️
+        <form action="/upvote" method="post">
+            <input type="hidden" name="id" value="<%= post.id %>">
+            <button type="submit">Upvote +</button>
+        </form>
+    </a>
+    <br>
+<% end %>
+
+<h2> Submit a post </h2>
+
+<form action="/" method="post">
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="url" placeholder="URL">
+    <input type="submit" value="Submit">
+</form>

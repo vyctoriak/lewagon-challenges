@@ -1,0 +1,17 @@
+<h1>Album</h1>
+<div>
+    <p>
+        <a href="/albums/<%= @album[0] %>"><%= @album[1] %></a>
+    </p>
+</div>
+<h2>Tracks from this album</h2>
+<div>
+    <p>
+        <% @tracks.each do |track| %>
+            <a href="/tracks/<%=track[0]%>">
+                <%= track[4] %>
+            </a>
+            <br>
+        <% end %>
+    </p>
+</div>
