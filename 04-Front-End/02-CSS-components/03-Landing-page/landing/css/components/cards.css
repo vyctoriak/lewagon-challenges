@@ -1,0 +1,25 @@
+.cards h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.cards>div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-item {
+    width: 200px;
+    box-shadow: 0 0 5px rgb(230, 230, 230);
+    padding: 1rem 1.5rem;
+    margin: 0 0rem 1rem;
+    text-align: center;
+}
+
+.card-item img {
+    width: 100%;
+}
+
+.card-item p {
+    opacity: 0.5;
+}
